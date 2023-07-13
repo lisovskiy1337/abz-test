@@ -1,0 +1,35 @@
+.truncate-container {
+  position: relative;
+
+  & > .truncate {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  & > .truncate__tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 16px;
+    border-radius: 4px;
+    background: var(--black-87);
+    color: #fff;
+    font-size: 14px;
+    white-space: initial;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition-delay: 150ms;
+    z-index: 4;
+    width: 90%;
+    word-break: break-all;
+  }
+
+  & .truncate:hover + .truncate__tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+}

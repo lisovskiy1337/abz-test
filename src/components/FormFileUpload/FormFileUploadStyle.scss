@@ -1,0 +1,30 @@
+input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  margin: 50px 0;
+  display: inline-flex;
+  width: 100%;
+  cursor: pointer;
+  &.error {
+    & > .input-file-btn,
+    & > .input-file-text {
+      border-color: var(--error);
+    }
+  }
+  & > .input-file-btn {
+    border-radius: 4px 0px 0px 4px;
+    border: 2px solid var(--black-87, rgba(0, 0, 0, 0.87));
+    padding: 14px 15px;
+  }
+
+  & > .input-file-text {
+    border-radius: 0 4px 4px 0;
+    border: 2px solid #d0cfcf;
+    border-left: none;
+    width: 100%;
+    padding: 14px 15px;
+    color: #7e7e7e;
+  }
+}

@@ -1,0 +1,23 @@
+.form {
+  margin: 50px 0;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.error-alert {
+  position: absolute;
+  bottom: 25px;
+  color: var(--error);
+  left: 16px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.form-error {
+  margin-top: 28px;
+  color: var(--error);
+}

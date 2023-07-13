@@ -1,0 +1,26 @@
+.hero {
+  height: 500px;
+  background: url("../../../public/assets/images/hero.webp") no-repeat center
+    center;
+  background-size: cover;
+
+  @media screen and (min-width: 1024px) {
+    height: 650px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  &__content {
+    max-width: 380px;
+    color: #fff;
+
+    &-text {
+      margin: 21px 0 32px;
+    }
+  }
+}

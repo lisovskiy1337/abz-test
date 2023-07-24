@@ -6,6 +6,7 @@
   display: flex;
   align-items: start;
   margin-bottom: 7px;
+  cursor: pointer;
 }
 .radio-input {
   -webkit-appearance: none;
@@ -17,6 +18,7 @@
   display: grid;
   place-content: center;
   margin: 2px 12px 0 0;
+  cursor: pointer;
 
   &::before {
     content: "";
